@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Create a canvas element for the chart -->
-    <div style="width: 600px; height: 400px; margin: auto auto;">
+    <div style="width: 600px; height: 600px; margin: 10px auto;">
         <canvas id="hyperglycemiaChart"></canvas>
     </div>
 
@@ -60,10 +60,14 @@
                 "plugins": {
                     "title": {
                         "display": true,
-                        "text": "Timeline of Hyperglycemia Effects on Endothelial Function and CAC Risk",
-                        "font": { "size": 16 }
+                        "text": "Timeline of Hyperglycemia Effectson Endothelial Function and CAC Risk",
+                        "font": { "size": 14 }
                     },
-                    "legend": { "position": "top" }
+                    "legend": { 
+                        "position": "top", 
+                        "labels": { "boxWidth": 15 }, "font": { "size": 4}
+                      
+                     },
                 },
                 "scales": {
                     "x": {
